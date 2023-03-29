@@ -10,4 +10,5 @@ class RTInter extends Model
     use HasFactory;
 
     protected $table = "rtinter";
+    protected $guarded = [];
 }

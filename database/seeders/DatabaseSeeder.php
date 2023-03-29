@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\Inter\RTInterImportSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             AdminSeeder::class,
             UserSeeder::class,
+            RTInterImportSeeder::class
             // PemilihSeeder::class,
             // PemilihImportSeeder::class,
             // OptionSeeder::class,
