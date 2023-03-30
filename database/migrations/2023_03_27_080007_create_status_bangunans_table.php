@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('status_bangunans', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedTinyInteger('id')->primary();
+            $table->string("nama");
             $table->timestamps();
         });
     }

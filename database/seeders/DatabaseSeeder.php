@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\StatusBangunan;
 use Database\Seeders\Inter\RTInterImportSeeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,12 +27,15 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             AdminSeeder::class,
             UserSeeder::class,
-            RTInterImportSeeder::class
-            // PemilihSeeder::class,
-            // PemilihImportSeeder::class,
-            // OptionSeeder::class,
             // TestAccountSeeder::class,
-
         ]);
+        $this->call([
+            StatusBangunanSeeder::class
+        ]);
+        $this->call([
+            // RTInterImportSeeder::class,
+            BangunanSeeder::class
+        ]);
+        
     }
 }
