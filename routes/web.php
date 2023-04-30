@@ -13,15 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/run",[ArtisanController::class,"run"]);
+Route::get("/run", [ArtisanController::class, "run"]);
 
-Route::get('/auth/redirect', [GoogleLoginController::class,"redirectToProvider"]);
-Route::get('/login/google/callback', [GoogleLoginController::class,"handleProviderCallback"]);
+// Route::get('/auth/redirect', [GoogleLoginController::class,"redirectToProvider"]);
+// Route::get('/login/google/callback', [GoogleLoginController::class,"handleProviderCallback"]);
 
 Route::get('/', function () {
     return redirect("/admin");
 });
-Route::get('/login',fn()=>redirect('/admin/login'))->name("login");
-
-
-
+Route::get('/login', fn () => redirect('/admin/login'))->name("login");

@@ -27,14 +27,14 @@ class TestAccountSeeder extends Seeder
             "name" => "No Role"
         ]);
         User::create([
-            "email" => "relawan@bersama.com",
+            "email" => "ihza@bersama.com",
             "password" => Hash::make("password123"),
             "name" => "Relawan"
-        ])->assignRole(['relawan']);
+        ])->assignRole(['guest']);
         User::create([
             "email" => "aliffia0826@gmail.com",
             "password" => Hash::make("password123"),
             "name" => "Alif Fia"
-        ])->assignRole(['relawan']);
+        ])->assignRole(['guest']);
     }
 }

@@ -111,5 +111,6 @@ return [
     */
 
     'password_timeout' => 10800,
+    'redirect_after_login' => env("CLIENT_REDIRECT_AFTER_LOGIN")
 
 ];
