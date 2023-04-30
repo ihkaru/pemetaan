@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ArtisanController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
